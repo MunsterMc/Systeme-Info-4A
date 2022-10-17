@@ -1,3 +1,10 @@
+document.getElementById("user-input")
+    .addEventListener("keypress", function(event) {
+    event.preventDefault();
+    if ( event.key === "Enter" ) {
+        document.getElementById("btn").click();
+    }
+});
 
 function createQRCode() {
 

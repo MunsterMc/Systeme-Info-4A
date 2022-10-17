@@ -7,15 +7,20 @@
         <meta name="mobile-web-app-capable" content="yes">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="scripts/genQR.js"></script>
+        
         <title>Le restaurant du bled</title>
     </head>
     <body>
+         
         <label for="user-input">Enter QR code data: </label>
         <input type="text" id="user-input">
+
         <button id="btn" onclick="createQRCode()">
             Generate QR code!
         </button>
-        <!-- v On met le QRCode là dedans  v -->
-        <div id="qrcode-container"></div> 
+        
+        <div id="qrcode-container"></div>
+        
+        
     </body>
 </html>
