@@ -9,8 +9,8 @@ function createQRCode() {
 
     new QRCode(QRElement, {
         text: textinput,
-        width: 512,
-        height: 512,
+        width: 512, // à modifier plus tard
+        height: 512, // à modifier plus tard
         colorDark : "#000000",
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.H
