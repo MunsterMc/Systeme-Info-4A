@@ -16,6 +16,7 @@ body{
     padding-top: 80px;
 }
 nav{
+    z-index: 950;
     position: fixed;
     left: 0;
     right: 0;
@@ -75,7 +76,7 @@ nav #toggle span{
     top: 0;
     width: 60vw;
     padding: 20px;
-    background-color: #eddea4;
+    background-color: #F7A072;
     transform: translateX(100%);
     transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     max-width: 600px;
@@ -92,6 +93,7 @@ nav #toggle span{
     margin: auto;
 }
 .content .cat{
+    z-index: 900;
     text-transform: capitalize;
     aspect-ratio: 1;
     width: 100%;
@@ -99,6 +101,7 @@ nav #toggle span{
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: drop-shadow(4px 10px 4px rgba(0, 0, 0, 0.205));
 }
 .content .cat a{
     text-decoration: none;
