@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'aldrich'; /*a name to be used later*/
+    src: url('../fonts/Aldrich-Regular.ttf'); /*URL to font*/
+}
+
+html, body {
+    font-family: aldrich;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+.modal {
+    width: 50vw;
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
+}
+
+body {
+    background-color: #F7A072;
+    position: relative;
+}
+
+#qr-reader {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#outputBox {
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+}
