@@ -3,6 +3,11 @@
     src: url('Aldrich-Regular.ttf'); /*URL to font*/
 }
 
+img{
+    width: 100%;
+    height: 100%;
+}
+
 body{
     min-height: 100vh;
     font-family: sans-serif;
