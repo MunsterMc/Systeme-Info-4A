@@ -93,3 +93,9 @@ nav #toggle span{
     color: black;
     font-weight: bold;
 }
+
+#BAR{
+    height: 1%;
+    width: 100%;
+    color: black;
+}
