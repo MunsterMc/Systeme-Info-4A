@@ -5,20 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="mobile-web-app-capable" content="yes">
-        <!-- <script src="../scripts/camScan.js"></script> -->
-        <script src="https://unpkg.com/html5-qrcode"></script>
+        <script src="../scripts/camScan.js" type="module"></script>
+        <script type="module" src="../3rd-party/html5-qrcode.min.js"></script>
         <title>Scanner page</title>
     </head>
     <body>
         <div id="qr-reader" style="width: 600px"></div>
-
         <script>
-            function onScanSuccess(decodedText, decodedResult) {
-                console.log(`Code scanned = ${decodedText}`, decodedResult);
-            }
-            var html5QrcodeScanner = new Html5QrcodeScanner(
-                "qr-reader", { fps: 10, qrbox: 250 });
-            html5QrcodeScanner.render(onScanSuccess);
+            
         </script>
     </body>
 </html>
