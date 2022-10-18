@@ -108,3 +108,7 @@ nav #toggle span{
 #BAR{
     border-top: 5px solid #000;
 }
+
+.titre{
+    text-align: center;
+}
