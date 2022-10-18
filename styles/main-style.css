@@ -3,18 +3,16 @@
     src: url('../fonts/Aldrich-Regular.ttf'); /*URL to font*/
 }
 
-img{
-    width: 100%;
-    height: 100%;
+body{
+    background-color: #D5CDC9;
+    min-height: 100vh;
+    font-family: aldrich, sans-serif;
+    padding-top: 80px;
+    user-select: none; 
 }
 
-body{
-    background-color: #D9E5D6;
-    min-height: 100vh;
-    font-family: sans-serif;
-    font-family: aldrich;
-    padding-top: 80px;
-}
+/* NAVBAR */
+
 nav{
     z-index: 950;
     position: fixed;
@@ -26,12 +24,11 @@ nav{
     align-items: center;
     justify-content: flex-end;
     padding: 0 20px;
-    background-color: #F7A072;
+    background-color: #5C474D;
 }
 nav #toggle{
     width: 40px;
     height: 40px;
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -42,7 +39,6 @@ nav #toggle{
 #menu #close{
     width: 40px;
     height: 40px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,19 +50,19 @@ nav #toggle{
 #menu #close span{
     width: 30px;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transform: rotate(45deg);
 }
 #menu #close span:last-child{
     width: 30px;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transform: rotate(-45deg);
 }
 nav #toggle span{
     width: 30px;
     height: 2px;
-    background-color: black;
+    background-color: white;
 }
 #menu{
     box-sizing: border-box;
@@ -76,14 +72,24 @@ nav #toggle span{
     top: 0;
     width: 60vw;
     padding: 20px;
-    background-color: #F7A072;
+    background-color: #45353A;
     transform: translateX(100%);
-    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     max-width: 600px;
 }
 #menu.active{
     transform: translateX(0);
 }
+
+
+
+.catimg{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
 .content{
     padding: 15px;
     display: grid;
@@ -92,12 +98,13 @@ nav #toggle span{
     max-width: 600px;
     margin: auto;
 }
+
 .content .cat{
+    height: 150px;
     z-index: 900;
-    text-transform: capitalize;
     aspect-ratio: 1;
     width: 100%;
-    background-color: #F7A072;
+    background-color: #C75000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,10 +116,33 @@ nav #toggle span{
     font-weight: bold;
 }
 
-#BAR{
+.bar{
     border-top: 5px solid #000;
 }
 
-.titre{
+.divTitle{
+    background-color: #513E44;
+    padding: 5px;
+    margin: 10px;
+}
+
+.title{
     text-align: center;
+    color: #D2CBC6;
+    font-size: 23px;
+}
+
+.container{
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+    align-items: center;
+}
+
+.product{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: #C75000;
 }
