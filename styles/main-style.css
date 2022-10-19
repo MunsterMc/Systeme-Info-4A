@@ -81,13 +81,14 @@ nav #toggle span{
     transform: translateX(0);
 }
 
+#order{
+    color: #D2CBC6;
+}
 
-
-.catimg{
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
-    display: block;
+.catName{
+    color: black;
+    font-size: 25px;
+    filter: drop-shadow(0px 0px 10px white);
 }
 
 .content{
@@ -99,18 +100,19 @@ nav #toggle span{
     margin: auto;
 }
 
-.content .cat{
+.content #cat{
     height: 150px;
     z-index: 900;
     aspect-ratio: 1;
     width: 100%;
-    background-color: #C75000;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-image: no-repeat center center;
     filter: drop-shadow(4px 10px 4px rgba(0, 0, 0, 0.205));
 }
-.content .cat a{
+.content #cat a{
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -143,7 +145,20 @@ nav #toggle span{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-    height: 150px;
+    height: auto;
     background-color: #C75000;
     filter: drop-shadow(4px 10px 4px rgba(0, 0, 0, 0.205));
+}
+
+table{
+    height: 100%;
+    width: 100%;
+}
+
+th{
+    height: 100%;
+}
+
+.col1{
+    width: 40%;
 }

@@ -19,7 +19,6 @@ close.addEventListener('click', ()=>{
 var categories = [
     Boissons = {
         img: "images/boissons.jpg", // le lien idéal
-        class_name: "cat",
         link: "#boissons",
         name: "Boissons",
         menu: [
@@ -28,6 +27,7 @@ var categories = [
                 name: "Vin des montagnes",
                 id: 101, // on se donne une marge de 100 produits par catégorie
                 prix: 12,
+                displayPrix: "12.00€",
                 description: "description du produit"
             },
             B1 = {
@@ -35,6 +35,7 @@ var categories = [
                 name: "Coca-Cola",
                 id: 102, // on se donne une marge de 100 produits par catégorie
                 prix: 3,
+                displayPrix: "3.00€",
                 description: "description du produit"
             }, 
             B2 = {
@@ -42,13 +43,13 @@ var categories = [
                 name: "Eau minérale",
                 id: 103, // on se donne une marge de 100 produits par catégorie
                 prix: 1.50,
+                displayPrix: "1.50€",
                 description: "description du produit"
             }
         ]
     },
     Entrees = {
         img: "images/entrees.jpg", // le lien idéal
-        class_name: "cat",
         link: "#entrees",
         name: "Entrées",
         menu: [
@@ -57,6 +58,7 @@ var categories = [
                 name: "Rillettes du Mans",
                 id: 201, // on se donne une marge de 100 produits par catégorie
                 prix: 6,
+                displayPrix: "6.00€",
                 description: "description du produit"
             },
             E1 = {
@@ -64,6 +66,7 @@ var categories = [
                 name: "Soupe à l'onion",
                 id: 202, // on se donne une marge de 100 produits par catégorie
                 prix: 5.50,
+                displayPrix: "5.50€",
                 description: "description du produit"
             }, 
             E2 = {
@@ -71,13 +74,13 @@ var categories = [
                 name: "Oeufs mimosa",
                 id: 203, // on se donne une marge de 100 produits par catégorie
                 prix: 4.50,
+                displayPrix: "4.50€",
                 description: "description du produit"
             }
         ]
     },
     Poissons = {
         img: "images/poissons.jpg", // le lien idéal
-        class_name: "cat",
         link: "#poissons",
         name: "Poissons",
         menu: [
@@ -86,6 +89,7 @@ var categories = [
                 name: "Sardines dans leur boîte",
                 id: 301, // on se donne une marge de 100 produits par catégorie
                 prix: 3,
+                displayPrix: "3.00€",
                 description: "description du produit"
             },
             P1 = {
@@ -93,6 +97,7 @@ var categories = [
                 name: "Hareng et son gratin de pomme de terre",
                 id: 302, // on se donne une marge de 100 produits par catégorie
                 prix: 14,
+                displayPrix: "14.00€",
                 description: "description du produit"
             }, 
             P2 = {
@@ -100,13 +105,13 @@ var categories = [
                 name: "Fish&Chips",
                 id: 303, // on se donne une marge de 100 produits par catégorie
                 prix: 8.50,
+                displayPrix: "8.50€",
                 description: "description du produit"
             }
         ]
     },
     Viandes = {
         img: "images/viandes.jpg", // le lien idéal
-        class_name: "cat",
         link: "#viandes",
         name: "Viandes",
         menu: [
@@ -115,6 +120,7 @@ var categories = [
                 name: "Pollo al fuego",
                 id: 401, // on se donne une marge de 100 produits par catégorie
                 prix: 30,
+                displayPrix: "30.00€",
                 description: "description du produit"
             },
             V1 = {
@@ -122,6 +128,7 @@ var categories = [
                 name: "Steak tartare",
                 id: 402, // on se donne une marge de 100 produits par catégorie
                 prix: 15.50,
+                displayPrix: "15.50€",
                 description: "description du produit"
             }, 
             V2 = {
@@ -129,13 +136,13 @@ var categories = [
                 name: "Escalope de poulet et haricots verts",
                 id: 403, // on se donne une marge de 100 produits par catégorie
                 prix: 10,
+                displayPrix: "10.00€",
                 description: "description du produit"
             }
         ]
     },
     Fromages = {
         img: "images/fromages.jpg", // le lien idéal
-        class_name: "cat",
         link: "#fromages",
         name: "Fromages",
         menu: [
@@ -144,6 +151,7 @@ var categories = [
                 name: "Camembert",
                 id: 501, // on se donne une marge de 100 produits par catégorie
                 prix: 5,
+                displayPrix: "5.00€",
                 description: "description du produit"
             },
             F1 = {
@@ -151,6 +159,7 @@ var categories = [
                 name: "Vache qui rit",
                 id: 502, // on se donne une marge de 100 produits par catégorie
                 prix: 2,
+                displayPrix: "2.00€",
                 description: "description du produit"
             }, 
             F2 = {
@@ -158,13 +167,13 @@ var categories = [
                 name: "Tome fraiche du cantal",
                 id: 503, // on se donne une marge de 100 produits par catégorie
                 prix: 6,
+                displayPrix: "6.00€",
                 description: "description du produit"
             }
         ]
     },
     Desserts = {
         img: "images/desserts.jpg", // le lien idéal
-        class_name: "cat",
         link: "#desserts",
         name: "Desserts",
         menu: [
@@ -173,6 +182,7 @@ var categories = [
                 name: "Crème brulée",
                 id: 601, // on se donne une marge de 100 produits par catégorie
                 prix: 4,
+                displayPrix: "4.00€",
                 description: "description du produit"
             },
             D1 = {
@@ -180,6 +190,7 @@ var categories = [
                 name: "Brownie au chocolat",
                 id: 602, // on se donne une marge de 100 produits par catégorie
                 prix: 5,
+                displayPrix: "5.00€",
                 description: "description du produit"
             }, 
             D2 = {
@@ -187,77 +198,107 @@ var categories = [
                 name: "Salade de fruit",
                 id: 603, // on se donne une marge de 100 produits par catégorie
                 prix: 4.50,
+                displayPrix: "4.50€",
                 description: "description du produit"
             }
         ]
     }
 ]
 
+var order = []
+
 // display categories
 
 for (let i = 0; i < categories.length; i++) {
     var cat = document.createElement('div');
-    cat.id = "cat" + i
-    cat.className = "cat"
-    document.getElementById("top").appendChild(cat)
-
-    var img = new Image()
-    img.src = categories[i].img
-    img.alt = categories[i].name
-    img.className = "catimg"
-    img.onclick = function() {
+    cat.id = "cat"
+    cat.style.backgroundImage = "url(" + categories[i].img + ")"
+    cat.onclick = function() {
         window.location.href = categories[i].link
     };
-    document.getElementById("cat" + i).appendChild(img);
+    var catName = document.createElement('p')
+    catName.innerHTML = categories[i].name
+    catName.className = "catName"
+    cat.appendChild(catName)
+
+    document.getElementById("top").appendChild(cat)
 }
 
 // display products for each categorie
 
 for (let i = 0; i < categories.length; i++) {
     var bar = document.createElement('div')
-    bar.id = "bar" + i
     bar.className = "bar"
     document.body.appendChild(bar)
 
     var divCat = document.createElement('div')
     divCat.id = categories[i].link.slice(1)
-    document.body.appendChild(divCat)
 
     var divTitle = document.createElement('div')
     divTitle.className = "divTitle"
-    divTitle.id = "divTitle" + i
-    document.getElementById(categories[i].link.slice(1)).appendChild(divTitle)
 
     var title = document.createElement('p')
     title.innerHTML = categories[i].name
     title.className = "title"
-    document.getElementById('divTitle' + i).appendChild(title)
 
     var divProducts = document.createElement('div')
     divProducts.className = "container"
     divProducts.id = "container" + i
-    document.getElementById(categories[i].link.slice(1)).appendChild(divProducts)
+    
+    divTitle.appendChild(title) // add categorie title
+    divCat.appendChild(divTitle) // add div for categorie title
+    divCat.appendChild(divProducts) // add div for products
+    document.body.appendChild(divCat) // add div categorie
 
-    for (let j = 0; j < categories[i].menu.length; j++) { // use a fucking array u dumbass
-        var product = document.createElement('div')
+    for (let j = 0; j < categories[i].menu.length; j++) {
+        let product = document.createElement('div')
         product.className = "product"
-        product.id = "product" + i + "-" + j
-        document.getElementById("container" + i).appendChild(product)
-        
-        var img = new Image()
+
+        let table = document.createElement('table')
+        let row = document.createElement('tr')
+        let col1 = document.createElement('th')
+        col1.className = "col1"
+        let col2 = document.createElement('th')
+        col2.className = "col2"
+    
+        let img = new Image()
         img.src = categories[i].menu[j].img
         img.alt = categories[i].menu[j].name
         img.className = "productimg"
-        document.getElementById("product" + i + "-" + j).appendChild(img);
 
-        var title = document.createElement('p')
+        col1.appendChild(img) // add img 
+        
+        let title = document.createElement('p')
         title.className = "titleProduct"
         title.innerHTML = categories[i].menu[j].name
-        document.getElementById("product" + i + "-" + j).appendChild(title);
 
-        var description = document.createElement('p')
+        let description = document.createElement('p')
         description.className = "descriptionProduct"
         description.innerHTML = categories[i].menu[j].description
-        document.getElementById("product" + i + "-" + j).appendChild(description);
+
+        let price = document.createElement('p')
+        price.className = "price"
+        price.innerHTML = categories[i].menu[j].displayPrix
+
+        let button = document.createElement('button')
+        button.innerHTML = "Ajouter"
+        button.className = "addButton"
+        button.onclick = function() {
+            order.push(categories[i].menu[j].id)
+            let el = document.createElement('span')
+            el.innerHTML = categories[i].menu[j].name + "<br />"
+            document.getElementById("order").appendChild(el)
+        };
+
+        col2.appendChild(title) // add title
+        col2.appendChild(description) // add description
+        col2.appendChild(price) // add price
+        col2.appendChild(button) // add button
+
+        row.appendChild(col1)
+        row.appendChild(col2)
+        table.appendChild(row)
+        product.appendChild(table)
+        document.getElementById("container" + i).appendChild(product) // add product to container
     }
 }
