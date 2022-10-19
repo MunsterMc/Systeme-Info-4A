@@ -145,4 +145,5 @@ nav #toggle span{
     width: 100%;
     height: 150px;
     background-color: #C75000;
+    filter: drop-shadow(4px 10px 4px rgba(0, 0, 0, 0.205));
 }
