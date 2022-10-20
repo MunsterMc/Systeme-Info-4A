@@ -17,12 +17,12 @@ close.addEventListener('click', ()=>{
 // à partir d'une base de données pour le tableau "categories"
 
 var categories = [
-    Boissons = {
+    {
         img: "images/boissons.jpg", // le lien idéal
         link: "#boissons",
         name: "Boissons",
         menu: [
-            B0 = {
+            {
                 img: "images/boissons/101.jpg",
                 name: "Vin des montagnes",
                 id: 101, // on se donne une marge de 100 produits par catégorie
@@ -30,7 +30,7 @@ var categories = [
                 displayPrix: "12.00€",
                 description: "description du produit"
             },
-            B1 = {
+            {
                 img: "images/boissons/102.jpg",
                 name: "Coca-Cola",
                 id: 102, // on se donne une marge de 100 produits par catégorie
@@ -38,7 +38,7 @@ var categories = [
                 displayPrix: "3.00€",
                 description: "description du produit"
             }, 
-            B2 = {
+            {
                 img: "images/boissons/103.jpg",
                 name: "Eau minérale",
                 id: 103, // on se donne une marge de 100 produits par catégorie
@@ -48,12 +48,12 @@ var categories = [
             }
         ]
     },
-    Entrees = {
+    {
         img: "images/entrees.jpg", // le lien idéal
         link: "#entrees",
         name: "Entrées",
         menu: [
-            E0 = {
+            {
                 img: "images/entrees/201.jpg",
                 name: "Rillettes du Mans",
                 id: 201, // on se donne une marge de 100 produits par catégorie
@@ -61,15 +61,15 @@ var categories = [
                 displayPrix: "6.00€",
                 description: "description du produit"
             },
-            E1 = {
+            {
                 img: "images/entrees/202.jpg",
                 name: "Soupe à l'onion",
                 id: 202, // on se donne une marge de 100 produits par catégorie
                 prix: 5.50,
                 displayPrix: "5.50€",
                 description: "description du produit"
-            }, 
-            E2 = {
+            },
+            {
                 img: "images/entrees/203.jpg",
                 name: "Oeufs mimosa",
                 id: 203, // on se donne une marge de 100 produits par catégorie
@@ -79,12 +79,12 @@ var categories = [
             }
         ]
     },
-    Poissons = {
+    {
         img: "images/poissons.jpg", // le lien idéal
         link: "#poissons",
         name: "Poissons",
         menu: [
-            P0 = {
+            {
                 img: "images/poissons/301.jpg",
                 name: "Sardines dans leur boîte",
                 id: 301, // on se donne une marge de 100 produits par catégorie
@@ -92,15 +92,15 @@ var categories = [
                 displayPrix: "3.00€",
                 description: "description du produit"
             },
-            P1 = {
+            {
                 img: "images/poissons/302.jpg",
                 name: "Hareng et son gratin de pomme de terre",
                 id: 302, // on se donne une marge de 100 produits par catégorie
                 prix: 14,
                 displayPrix: "14.00€",
                 description: "description du produit"
-            }, 
-            P2 = {
+            },
+            {
                 img: "images/poissons/303.jpg",
                 name: "Fish&Chips",
                 id: 303, // on se donne une marge de 100 produits par catégorie
@@ -110,12 +110,12 @@ var categories = [
             }
         ]
     },
-    Viandes = {
+    {
         img: "images/viandes.jpg", // le lien idéal
         link: "#viandes",
         name: "Viandes",
         menu: [
-            V0 = {
+            {
                 img: "images/viandes/401.jpg",
                 name: "Pollo al fuego",
                 id: 401, // on se donne une marge de 100 produits par catégorie
@@ -123,7 +123,7 @@ var categories = [
                 displayPrix: "30.00€",
                 description: "description du produit"
             },
-            V1 = {
+            {
                 img: "images/viandes/402.jpg",
                 name: "Steak tartare",
                 id: 402, // on se donne une marge de 100 produits par catégorie
@@ -131,7 +131,7 @@ var categories = [
                 displayPrix: "15.50€",
                 description: "description du produit"
             }, 
-            V2 = {
+            {
                 img: "images/viandes/403.jpg",
                 name: "Escalope de poulet et haricots verts",
                 id: 403, // on se donne une marge de 100 produits par catégorie
@@ -141,12 +141,12 @@ var categories = [
             }
         ]
     },
-    Fromages = {
+    {
         img: "images/fromages.jpg", // le lien idéal
         link: "#fromages",
         name: "Fromages",
         menu: [
-            F0 = {
+            {
                 img: "images/fromages/501.jpg",
                 name: "Camembert",
                 id: 501, // on se donne une marge de 100 produits par catégorie
@@ -154,7 +154,7 @@ var categories = [
                 displayPrix: "5.00€",
                 description: "description du produit"
             },
-            F1 = {
+            {
                 img: "images/fromages/502.jpg",
                 name: "Vache qui rit",
                 id: 502, // on se donne une marge de 100 produits par catégorie
@@ -162,7 +162,7 @@ var categories = [
                 displayPrix: "2.00€",
                 description: "description du produit"
             }, 
-            F2 = {
+            {
                 img: "images/fromages/503.jpg",
                 name: "Tome fraiche du cantal",
                 id: 503, // on se donne une marge de 100 produits par catégorie
@@ -172,12 +172,12 @@ var categories = [
             }
         ]
     },
-    Desserts = {
+    {
         img: "images/desserts.jpg", // le lien idéal
         link: "#desserts",
         name: "Desserts",
         menu: [
-            D0 = {
+            {
                 img: "images/desserts/601.jpg",
                 name: "Crème brulée",
                 id: 601, // on se donne une marge de 100 produits par catégorie
@@ -185,7 +185,7 @@ var categories = [
                 displayPrix: "4.00€",
                 description: "description du produit"
             },
-            D1 = {
+            {
                 img: "images/desserts/602.jpg",
                 name: "Brownie au chocolat",
                 id: 602, // on se donne une marge de 100 produits par catégorie
@@ -193,7 +193,7 @@ var categories = [
                 displayPrix: "5.00€",
                 description: "description du produit"
             }, 
-            D2 = {
+            {
                 img: "images/desserts/603.jpg",
                 name: "Salade de fruit",
                 id: 603, // on se donne une marge de 100 produits par catégorie
@@ -205,7 +205,7 @@ var categories = [
     }
 ]
 
-var order = []
+var order = {}
 
 // display categories
 
@@ -283,11 +283,27 @@ for (let i = 0; i < categories.length; i++) {
         let button = document.createElement('button')
         button.innerHTML = "Ajouter"
         button.className = "addButton"
+
         button.onclick = function() {
-            order.push(categories[i].menu[j].id)
-            let el = document.createElement('span')
-            el.innerHTML = categories[i].menu[j].name + "<br />"
-            document.getElementById("order").appendChild(el)
+            if (order[categories[i].menu[j].id] == undefined){
+                order[categories[i].menu[j].id] = 1
+            }
+            else {
+                order[categories[i].menu[j].id]++
+            }
+
+            document.getElementById("order").innerHTML = ""
+            let price = 0
+            for (const [product, quantity] of Object.entries(order)) {
+                let el = document.createElement('span')
+                let p = categories[product.toString().slice(0, 1)-1].menu.find(({ id }) => id === parseInt(product))
+                el.innerHTML = p.name + " " + quantity + "<br />"
+                document.getElementById("order").appendChild(el)
+                price += p.prix * quantity
+            }
+            let total = document.createElement('span')
+            total.innerHTML = price + "€"
+            document.getElementById("order").appendChild(total)
         };
 
         col2.appendChild(title) // add title
