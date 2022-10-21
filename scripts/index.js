@@ -284,6 +284,8 @@ for (let i = 0; i < categories.length; i++) {
         button.innerHTML = "Ajouter"
         button.className = "addButton"
 
+        // Function to save customer's order and display it 
+
         button.onclick = function() {
             if (order[categories[i].menu[j].id] == undefined){
                 order[categories[i].menu[j].id] = 1
@@ -291,19 +293,7 @@ for (let i = 0; i < categories.length; i++) {
             else {
                 order[categories[i].menu[j].id]++
             }
-
-            document.getElementById("order").innerHTML = ""
-            let price = 0
-            for (const [product, quantity] of Object.entries(order)) {
-                let el = document.createElement('span')
-                let p = categories[product.toString().slice(0, 1)-1].menu.find(({ id }) => id === parseInt(product))
-                el.innerHTML = p.name + " " + quantity + "<br />"
-                document.getElementById("order").appendChild(el)
-                price += p.prix * quantity
-            }
-            let total = document.createElement('span')
-            total.innerHTML = price + "€"
-            document.getElementById("order").appendChild(total)
+            displayOrder(i, j)
         };
 
         col2.appendChild(title) // add title
@@ -318,3 +308,39 @@ for (let i = 0; i < categories.length; i++) {
         document.getElementById("container" + i).appendChild(product) // add product to container
     }
 }
+
+function displayOrder(i, j) {
+    document.getElementById("order").innerHTML = ""
+
+    let price = 0
+    for (const [product, quantity] of Object.entries(order)) {
+        let el = document.createElement('span')
+        let p = categories[product.toString().slice(0, 1)-1].menu.find(({ id }) => id === parseInt(product))
+        el.innerHTML = "<br />" + p.name + " X" + quantity
+        document.getElementById("order").appendChild(el)
+        price += p.prix * quantity
+
+        let del = document.createElement('button')
+        del.innerHTML = "-"
+        del.className = "minusButton"
+        del.onclick = function() {
+            if (order[product] == 1) {
+                delete order[product]
+            }
+            else {
+                order[product]--
+            }
+            displayOrder(i, j)
+        }
+        document.getElementById("order").appendChild(del)
+    }
+
+    let total = document.createElement('span')
+    total.innerHTML = "<br />" + price + "€"
+    document.getElementById("order").appendChild(total)
+}
+
+// function delOrder(id) {
+//     console.log("on m'a appelé")
+//     delete order[id]
+// }
