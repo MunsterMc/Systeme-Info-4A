@@ -1,4 +1,32 @@
+import categories from '../menu.json' assert { type: 'json' };
+
+function createQRCode() {
+    const QRElement = document.getElementById("qrCode");
+    // Vider le container du QRCode avant de créer un nouveau QR Code
+    // Sinon on a plusieurs QR Codes
+    QRElement.innerHTML = "";
+    const textinput = JSON.stringify(order);
+    if(textinput.length > 2) {
+        new QRCode(QRElement, {
+            text: textinput,
+            width: 256, // à modifier plus tard
+            height: 256, // à modifier plus tard
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    } else{
+        console.log("Order contents: ", textinput)
+    }
+}
+
 // NAVBAR
+
+let buttonVld = document.createElement('button')
+buttonVld.innerHTML = "Valider la commande"
+buttonVld.className = "validateButton"
+buttonVld.onclick = createQRCode
+document.getElementById("validateBtn").appendChild(buttonVld)
 
 var toggle = document.getElementById('toggle')
 var close = document.getElementById('close')
@@ -12,198 +40,6 @@ close.addEventListener('click', ()=>{
 })
 
 // CATEGORIES
-
-// Cette partie est codé en dur et devrait se faire idéalement
-// à partir d'une base de données pour le tableau "categories"
-
-var categories = [
-    {
-        img: "images/boissons.jpg", // le lien idéal
-        link: "#boissons",
-        name: "Boissons",
-        menu: [
-            {
-                img: "images/boissons/101.jpg",
-                name: "Vin des montagnes",
-                id: 101, // on se donne une marge de 100 produits par catégorie
-                prix: 12,
-                displayPrix: "12.00€",
-                description: "description du produit"
-            },
-            {
-                img: "images/boissons/102.jpg",
-                name: "Coca-Cola",
-                id: 102, // on se donne une marge de 100 produits par catégorie
-                prix: 3,
-                displayPrix: "3.00€",
-                description: "description du produit"
-            }, 
-            {
-                img: "images/boissons/103.jpg",
-                name: "Eau minérale",
-                id: 103, // on se donne une marge de 100 produits par catégorie
-                prix: 1.50,
-                displayPrix: "1.50€",
-                description: "description du produit"
-            }
-        ]
-    },
-    {
-        img: "images/entrees.jpg", // le lien idéal
-        link: "#entrees",
-        name: "Entrées",
-        menu: [
-            {
-                img: "images/entrees/201.jpg",
-                name: "Rillettes du Mans",
-                id: 201, // on se donne une marge de 100 produits par catégorie
-                prix: 6,
-                displayPrix: "6.00€",
-                description: "description du produit"
-            },
-            {
-                img: "images/entrees/202.jpg",
-                name: "Soupe à l'onion",
-                id: 202, // on se donne une marge de 100 produits par catégorie
-                prix: 5.50,
-                displayPrix: "5.50€",
-                description: "description du produit"
-            },
-            {
-                img: "images/entrees/203.jpg",
-                name: "Oeufs mimosa",
-                id: 203, // on se donne une marge de 100 produits par catégorie
-                prix: 4.50,
-                displayPrix: "4.50€",
-                description: "description du produit"
-            }
-        ]
-    },
-    {
-        img: "images/poissons.jpg", // le lien idéal
-        link: "#poissons",
-        name: "Poissons",
-        menu: [
-            {
-                img: "images/poissons/301.jpg",
-                name: "Sardines dans leur boîte",
-                id: 301, // on se donne une marge de 100 produits par catégorie
-                prix: 3,
-                displayPrix: "3.00€",
-                description: "description du produit"
-            },
-            {
-                img: "images/poissons/302.jpg",
-                name: "Hareng et son gratin de pomme de terre",
-                id: 302, // on se donne une marge de 100 produits par catégorie
-                prix: 14,
-                displayPrix: "14.00€",
-                description: "description du produit"
-            },
-            {
-                img: "images/poissons/303.jpg",
-                name: "Fish&Chips",
-                id: 303, // on se donne une marge de 100 produits par catégorie
-                prix: 8.50,
-                displayPrix: "8.50€",
-                description: "description du produit"
-            }
-        ]
-    },
-    {
-        img: "images/viandes.jpg", // le lien idéal
-        link: "#viandes",
-        name: "Viandes",
-        menu: [
-            {
-                img: "images/viandes/401.jpg",
-                name: "Pollo al fuego",
-                id: 401, // on se donne une marge de 100 produits par catégorie
-                prix: 30,
-                displayPrix: "30.00€",
-                description: "description du produit"
-            },
-            {
-                img: "images/viandes/402.jpg",
-                name: "Steak tartare",
-                id: 402, // on se donne une marge de 100 produits par catégorie
-                prix: 15.50,
-                displayPrix: "15.50€",
-                description: "description du produit"
-            }, 
-            {
-                img: "images/viandes/403.jpg",
-                name: "Escalope de poulet et haricots verts",
-                id: 403, // on se donne une marge de 100 produits par catégorie
-                prix: 10,
-                displayPrix: "10.00€",
-                description: "description du produit"
-            }
-        ]
-    },
-    {
-        img: "images/fromages.jpg", // le lien idéal
-        link: "#fromages",
-        name: "Fromages",
-        menu: [
-            {
-                img: "images/fromages/501.jpg",
-                name: "Camembert",
-                id: 501, // on se donne une marge de 100 produits par catégorie
-                prix: 5,
-                displayPrix: "5.00€",
-                description: "description du produit"
-            },
-            {
-                img: "images/fromages/502.jpg",
-                name: "Vache qui rit",
-                id: 502, // on se donne une marge de 100 produits par catégorie
-                prix: 2,
-                displayPrix: "2.00€",
-                description: "description du produit"
-            }, 
-            {
-                img: "images/fromages/503.jpg",
-                name: "Tome fraiche du cantal",
-                id: 503, // on se donne une marge de 100 produits par catégorie
-                prix: 6,
-                displayPrix: "6.00€",
-                description: "description du produit"
-            }
-        ]
-    },
-    {
-        img: "images/desserts.jpg", // le lien idéal
-        link: "#desserts",
-        name: "Desserts",
-        menu: [
-            {
-                img: "images/desserts/601.jpg",
-                name: "Crème brulée",
-                id: 601, // on se donne une marge de 100 produits par catégorie
-                prix: 4,
-                displayPrix: "4.00€",
-                description: "description du produit"
-            },
-            {
-                img: "images/desserts/602.jpg",
-                name: "Brownie au chocolat",
-                id: 602, // on se donne une marge de 100 produits par catégorie
-                prix: 5,
-                displayPrix: "5.00€",
-                description: "description du produit"
-            }, 
-            {
-                img: "images/desserts/603.jpg",
-                name: "Salade de fruit",
-                id: 603, // on se donne une marge de 100 produits par catégorie
-                prix: 4.50,
-                displayPrix: "4.50€",
-                description: "description du produit"
-            }
-        ]
-    }
-]
 
 var order = {}
 
@@ -224,7 +60,7 @@ for (let i = 0; i < categories.length; i++) {
     document.getElementById("top").appendChild(cat)
 }
 
-// display products for each categorie
+// display products for each category
 
 for (let i = 0; i < categories.length; i++) {
     var bar = document.createElement('div')
@@ -244,7 +80,7 @@ for (let i = 0; i < categories.length; i++) {
     var divProducts = document.createElement('div')
     divProducts.className = "container"
     divProducts.id = "container" + i
-    
+
     divTitle.appendChild(title) // add categorie title
     divCat.appendChild(divTitle) // add div for categorie title
     divCat.appendChild(divProducts) // add div for products
@@ -260,14 +96,14 @@ for (let i = 0; i < categories.length; i++) {
         col1.className = "col1"
         let col2 = document.createElement('th')
         col2.className = "col2"
-    
+
         let img = new Image()
         img.src = categories[i].menu[j].img
         img.alt = categories[i].menu[j].name
         img.className = "productimg"
 
-        col1.appendChild(img) // add img 
-        
+        col1.appendChild(img) // add img
+
         let title = document.createElement('p')
         title.className = "titleProduct"
         title.innerHTML = categories[i].menu[j].name
@@ -284,7 +120,7 @@ for (let i = 0; i < categories.length; i++) {
         button.innerHTML = "Ajouter"
         button.className = "addButton"
 
-        // Function to save customer's order and display it 
+        // Function to save customer's order and display it
 
         button.onclick = function() {
             if (order[categories[i].menu[j].id] == undefined){
@@ -336,11 +172,12 @@ function displayOrder(i, j) {
     }
 
     let total = document.createElement('span')
-    total.innerHTML = "<br />" + price + "€"
+    if (price == 0) {
+        total.innerHTML = "Votre panier est vide"
+    } else {
+        total.innerHTML = "<br />" + price + "€"
+    }
     document.getElementById("order").appendChild(total)
 }
-
-// function delOrder(id) {
-//     console.log("on m'a appelé")
-//     delete order[id]
-// }
+// add validation button
+document.getElementById("order").innerHTML = "Votre panier est vide"
