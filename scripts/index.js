@@ -45,6 +45,11 @@ var order = {}
 
 // display categories
 
+var top = document.createElement("div");
+top.className = "content";
+top.id = "top";
+document.body.appendChild(top);
+
 for (let i = 0; i < categories.length; i++) {
     var cat = document.createElement('div');
     cat.id = "cat"

@@ -165,17 +165,22 @@ th{
 }
 
 .addButton{
-    background-color: #513E44;
+    background-color: #317B22;
     color: white;
     padding: 10px;
     margin: 7px;
     margin-left: 50%;
-    border: 2px solid #45353A;
+    border: 2px solid #317B22;
     font-family: aldrich, sans-serif;
+    border-radius: 6px;
     font-size: 12px;
 }
 
 .addButton:active{
-    background-color: #735961;
-    border: 2px solid #513E44;  
+    background-color: #399027;
+    border: 2px solid #317B22;
+}
+
+.minusButton{
+    
 }
