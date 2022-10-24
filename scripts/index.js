@@ -117,7 +117,7 @@ for (let i = 0; i < categories.length; i++) {
         price.innerHTML = categories[i].menu[j].displayPrix
 
         let button = document.createElement('button')
-        button.innerHTML = "Ajouter"
+        button.innerHTML = "AJOUTER"
         button.className = "addButton"
 
         // Function to save customer's order and display it
@@ -147,12 +147,10 @@ for (let i = 0; i < categories.length; i++) {
 
 function displayOrder(i, j) {
     document.getElementById("order").innerHTML = ""
-    console.log(order)
 
     let price = 0
     for (const [product, quantity] of Object.entries(order)) {
         let el = document.createElement('span')
-        console.log(product)
         let p = categories[product.toString().slice(0, 1)-1].menu.find(({ id }) => id === parseInt(product))
         el.innerHTML = "<br />" + p.name + " X" + quantity
         document.getElementById("order").appendChild(el)
