@@ -31,37 +31,6 @@
       ]
     },
     {
-      "img": "images/desserts.jpg",
-      "link": "#desserts",
-      "name": "Desserts",
-      "menu": [
-        {
-          "img": "images/desserts/601.jpg",
-          "name": "Crème brulée",
-          "id": 601,
-          "prix": 4,
-          "displayPrix": "4.00€",
-          "description": "description du produit"
-        },
-        {
-          "img": "images/desserts/602.jpg",
-          "name": "Brownie au chocolat",
-          "id": 602,
-          "prix": 5,
-          "displayPrix": "5.00€",
-          "description": "description du produit"
-        },
-        {
-          "img": "images/desserts/603.jpg",
-          "name": "Salade de fruit",
-          "id": 603,
-          "prix": 4.5,
-          "displayPrix": "4.50€",
-          "description": "description du produit"
-        }
-      ]
-    },
-    {
       "img": "images/entrees.jpg",
       "link": "#entrees",
       "name": "Entrées",
@@ -88,37 +57,6 @@
           "id": 203,
           "prix": 4.5,
           "displayPrix": "4.50€",
-          "description": "description du produit"
-        }
-      ]
-    },
-    {
-      "img": "images/fromages.jpg",
-      "link": "#fromages",
-      "name": "Fromages",
-      "menu": [
-        {
-          "img": "images/fromages/501.jpg",
-          "name": "Camembert",
-          "id": 501,
-          "prix": 5,
-          "displayPrix": "5.00€",
-          "description": "description du produit"
-        },
-        {
-          "img": "images/fromages/502.jpg",
-          "name": "Vache qui rit",
-          "id": 502,
-          "prix": 2,
-          "displayPrix": "2.00€",
-          "description": "description du produit"
-        },
-        {
-          "img": "images/fromages/503.jpg",
-          "name": "Tome fraiche du cantal",
-          "id": 503,
-          "prix": 6,
-          "displayPrix": "6.00€",
           "description": "description du produit"
         }
       ]
@@ -181,6 +119,68 @@
           "id": 403,
           "prix": 10,
           "displayPrix": "10.00€",
+          "description": "description du produit"
+        }
+      ]
+    },
+    {
+      "img": "images/fromages.jpg",
+      "link": "#fromages",
+      "name": "Fromages",
+      "menu": [
+        {
+          "img": "images/fromages/501.jpg",
+          "name": "Camembert",
+          "id": 501,
+          "prix": 5,
+          "displayPrix": "5.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/fromages/502.jpg",
+          "name": "Vache qui rit",
+          "id": 502,
+          "prix": 2,
+          "displayPrix": "2.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/fromages/503.jpg",
+          "name": "Tome fraiche du cantal",
+          "id": 503,
+          "prix": 6,
+          "displayPrix": "6.00€",
+          "description": "description du produit"
+        }
+      ]
+    },
+    {
+      "img": "images/desserts.jpg",
+      "link": "#desserts",
+      "name": "Desserts",
+      "menu": [
+        {
+          "img": "images/desserts/601.jpg",
+          "name": "Crème brulée",
+          "id": 601,
+          "prix": 4,
+          "displayPrix": "4.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/desserts/602.jpg",
+          "name": "Brownie au chocolat",
+          "id": 602,
+          "prix": 5,
+          "displayPrix": "5.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/desserts/603.jpg",
+          "name": "Salade de fruit",
+          "id": 603,
+          "prix": 4.5,
+          "displayPrix": "4.50€",
           "description": "description du produit"
         }
       ]
