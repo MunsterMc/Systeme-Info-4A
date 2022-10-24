@@ -36,8 +36,10 @@ function createQRCode() {
 // NAVBAR
 
 let buttonVld = document.createElement('button')
-buttonVld.innerHTML = "Valider la commande"
+buttonVld.innerHTML = "Générer le QR code"
+buttonVld.id = "validateButton"
 buttonVld.className = "validateButton"
+buttonVld.style.display = 'none'
 buttonVld.onclick = createQRCode
 document.getElementById("validateBtn").appendChild(buttonVld)
 
@@ -196,6 +198,7 @@ function displayOrder(i, j) {
     let total = document.createElement('span')
     if (price == 0) {
         total.innerHTML = "Votre panier est vide"
+        document.getElementById("validateButton").style.display = 'none'
     } else {
         total.innerHTML = "<br />" + price + "€"
     }
@@ -206,9 +209,10 @@ document.getElementById("order").innerHTML = "Votre panier est vide"
 
 function updateBadge(){
     if(count == 0){
-        document.getElementById("badge").style.display = 'none';
+        document.getElementById("badge").style.display = 'none'
     }else{
-        document.getElementById("badge").style.display = 'flex';
+        document.getElementById("badge").style.display = 'flex'
+        document.getElementById("validateButton").style.display = 'flex'
         document.getElementById("badge").innerHTML = count
     }
 }

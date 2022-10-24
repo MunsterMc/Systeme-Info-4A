@@ -231,3 +231,7 @@ th{
     background: black;
     opacity: 0.4;
 }
+
+.validateButton{
+    border: none;
+}
