@@ -1,0 +1,188 @@
+[
+    {
+      "img": "images/boissons.jpg",
+      "link": "#boissons",
+      "name": "Boissons",
+      "menu": [
+        {
+          "img": "images/boissons/101.jpg",
+          "name": "Vin des montagnes",
+          "id": 101,
+          "prix": 12,
+          "displayPrix": "12.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/boissons/102.jpg",
+          "name": "Coca-Cola",
+          "id": 102,
+          "prix": 3,
+          "displayPrix": "3.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/boissons/103.jpg",
+          "name": "Eau minérale",
+          "id": 103,
+          "prix": 1.5,
+          "displayPrix": "1.50€",
+          "description": "description du produit"
+        }
+      ]
+    },
+    {
+      "img": "images/desserts.jpg",
+      "link": "#desserts",
+      "name": "Desserts",
+      "menu": [
+        {
+          "img": "images/desserts/601.jpg",
+          "name": "Crème brulée",
+          "id": 601,
+          "prix": 4,
+          "displayPrix": "4.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/desserts/602.jpg",
+          "name": "Brownie au chocolat",
+          "id": 602,
+          "prix": 5,
+          "displayPrix": "5.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/desserts/603.jpg",
+          "name": "Salade de fruit",
+          "id": 603,
+          "prix": 4.5,
+          "displayPrix": "4.50€",
+          "description": "description du produit"
+        }
+      ]
+    },
+    {
+      "img": "images/entrees.jpg",
+      "link": "#entrees",
+      "name": "Entrées",
+      "menu": [
+        {
+          "img": "images/entrees/201.jpg",
+          "name": "Rillettes du Mans",
+          "id": 201,
+          "prix": 6,
+          "displayPrix": "6.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/entrees/202.jpg",
+          "name": "Soupe à l'onion",
+          "id": 202,
+          "prix": 5.5,
+          "displayPrix": "5.50€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/entrees/203.jpg",
+          "name": "Oeufs mimosa",
+          "id": 203,
+          "prix": 4.5,
+          "displayPrix": "4.50€",
+          "description": "description du produit"
+        }
+      ]
+    },
+    {
+      "img": "images/fromages.jpg",
+      "link": "#fromages",
+      "name": "Fromages",
+      "menu": [
+        {
+          "img": "images/fromages/501.jpg",
+          "name": "Camembert",
+          "id": 501,
+          "prix": 5,
+          "displayPrix": "5.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/fromages/502.jpg",
+          "name": "Vache qui rit",
+          "id": 502,
+          "prix": 2,
+          "displayPrix": "2.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/fromages/503.jpg",
+          "name": "Tome fraiche du cantal",
+          "id": 503,
+          "prix": 6,
+          "displayPrix": "6.00€",
+          "description": "description du produit"
+        }
+      ]
+    },
+    {
+      "img": "images/poissons.jpg",
+      "link": "#poissons",
+      "name": "Poissons",
+      "menu": [
+        {
+          "img": "images/poissons/301.jpg",
+          "name": "Sardines dans leur boîte",
+          "id": 301,
+          "prix": 3,
+          "displayPrix": "3.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/poissons/302.jpg",
+          "name": "Hareng et son gratin de pomme de terre",
+          "id": 302,
+          "prix": 14,
+          "displayPrix": "14.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/poissons/303.jpg",
+          "name": "Fish&Chips",
+          "id": 303,
+          "prix": 8.5,
+          "displayPrix": "8.50€",
+          "description": "description du produit"
+        }
+      ]
+    },
+    {
+      "img": "images/viandes.jpg",
+      "link": "#viandes",
+      "name": "Viandes",
+      "menu": [
+        {
+          "img": "images/viandes/401.jpg",
+          "name": "Pollo al fuego",
+          "id": 401,
+          "prix": 30,
+          "displayPrix": "30.00€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/viandes/402.jpg",
+          "name": "Steak tartare",
+          "id": 402,
+          "prix": 15.5,
+          "displayPrix": "15.50€",
+          "description": "description du produit"
+        },
+        {
+          "img": "images/viandes/403.jpg",
+          "name": "Escalope de poulet et haricots verts",
+          "id": 403,
+          "prix": 10,
+          "displayPrix": "10.00€",
+          "description": "description du produit"
+        }
+      ]
+    }
+  ]

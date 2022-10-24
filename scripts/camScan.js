@@ -10,7 +10,6 @@ function onScanSuccess(decodedText, decodedResult) {
         Console.log("Error: " + error);
     });
 
-    
 }
 var html5QrcodeScanner = new Html5QrcodeScanner(
     "qr-reader", { fps: 5, qrbox: 250 });

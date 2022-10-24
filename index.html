@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
     <title>Poulp-i restaurant</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="styles/main-style.css">
-    <script src="scripts/index.js" defer></script>
+    <script type ="module" src="scripts/index.js" defer></script>
     <link rel="icon" type="image/x-icon" href="poulpy.ico">
 </head>
 <body>
@@ -23,94 +24,11 @@
                 <span></span>
             </div>
             <p id="order"></p>
+            <div id="validateBtn"></div>
+            <p id="qrCode"></p>
         </div>
     </nav>
 
-    <div class="content" id="top">
-        <!-- <div class="cat"><a href="#Aperitif"><img src="images/photo-1498429152472-9a433d9ddf3b.jpeg" alt="Apéritifs"/></a></div>
-        <div class="cat"><a href="#Entree"><img src="images/neetu-laddha-fK19RkXx9Sk-unsplash.jpg" alt="Entree"></a></div>
-        <div class="cat"><a href="#poissons"><img alt="Poissons" ></a></div>
-        <div class="cat"><a href="#viandes"><img alt="Viandes" src="images/giacomo-alonzi--2sfSznPgCA-unsplash.jpg"></a></div>
-        <div class="cat"><a href="#fromages"><img alt="Fromages"></a></div>
-        <div class="cat"><a href="#desserts"><img alt="desserts"></a></div> -->
-    </div>
-
-    <!-- <div id="BAR"/>
-    <div id="Aperitif">
-        <p class="TITRE">Les Apéritifs</p>
-        <div class="content">
-            <div class="cat"><img alt="Vin des montagnes"/></div>
-            <div class="cat"><img alt="Vin de la ferme"></div>
-            <div class="cat"><img alt="Vin de la lumière" ></div>
-            <div class="cat"><img alt="Ricard"></div>
-            <div class="cat"><img alt="Kir"></div>
-            <div class="cat"><img alt="Diabolos"></div>
-            <div class="cat"><img alt="Cola"></div>
-            <div class="cat"><img alt="jus divers"></div>
-        </div>
-    </div>
-
-    <div id="BAR"/>
-    <div id="Entree">
-        <p class="TITRE">Les Entree</p>
-        <div class="content">
-            <div class="cat"><img alt="Rillettes du mans"/></div>
-            <div class="cat"><img alt="OEufs Mimosa"></div>
-            <div class="cat"><img alt="Rillettes aux deux saumons et à l'aneth"></div>
-            <div class="cat"><img alt="Salade Cesar"></div>
-            <div class="cat"><img alt="Taboulé du chef"></div>
-            <div class="cat"><img alt="Saussisson brioché"></div>
-            <div class="cat"><img alt="Soupe à l'onion facile"></div>
-            <div class="cat"><img alt="Gougère facile"></div>
-        </div>
-    </div>
-    <div id="BAR"/>
-    <div id="poissons">
-        <p class="TITRE">Les Poissons</p>
-        <div class="content">
-            <div class="cat"><img alt="Hareng et son gratin de pomme de terre"/></div>
-            <div class="cat"><img alt="Sardines dans leur boite"></div>
-            <div class="cat"><img alt="Saumon fumé avec sa sauce" ></div>
-            <div class="cat"><img alt="Cabillau"></div>
-            <div class="cat"><img alt="FISH"></div>
-            <div class="cat"><img alt="Raie manta"></div>
-        </div>
-    </div>
-    <div id="BAR"/>
-    <div id="viandes">
-        <p class="TITRE">Les Viandes</p>
-        <div class="content">
-            <div class="cat"><img alt="Pollo fuego"/></div>
-            <div class="cat"><img alt="Steak tartare"></div>
-            <div class="cat"><img alt="Poitrine de Porc"></div>
-            <div class="cat"><img alt="Bavette"></div>
-            <div class="cat"><img alt="Escalope de Poulet"></div>
-            <div class="cat"><img alt="Paupiette de Veau"></div>
-        </div>
-    </div>
-    <div id="BAR"/>
-    <div id="fromages">
-        <p class="TITRE">Les Fromages</p>
-        <div class="content">
-            <div class="cat"><img alt="Camembert"/></div>
-            <div class="cat"><img alt=""></div>
-            <div class="cat"><img alt=""></div>
-            <div class="cat"><img alt=""></div>
-            <div class="cat"><img alt=""></div>
-            <div class="cat"><img alt=""></div>
-        </div>
-    </div>
-    <div id="BAR"/>
-    <div id="desserts">
-        <p class="TITRE">Les Desserts</p>
-        <div class="content">
-            <div class="cat"><img alt="Crème Brulée"/></div>
-            <div class="cat"><img alt=""></div>
-            <div class="cat"><img alt=""></div>
-            <div class="cat"><img alt=""></div>
-            <div class="cat"><img alt=""></div>
-            <div class="cat"><img alt=""></div>
-        </div>
-    </div> -->
+    <div class="content" id="top"></div>
 </body>
 </html>
