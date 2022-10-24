@@ -220,9 +220,7 @@ th{
     justify-content: center;
     align-items: center;
 }
-.qr-code-fullscreen>img{
-    z-index: 999;
-}
+
 .qr-code-fullscreen.active{
     pointer-events: all;
     opacity: 1;
@@ -233,6 +231,7 @@ th{
     inset: 0;
     background: black;
     opacity: 0.4;
+    z-index: -1;
 }
 
 .validateButton{
