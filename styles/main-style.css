@@ -27,6 +27,7 @@ nav{
     background-color: #5C474D;
 }
 nav #toggle{
+    position: relative;
     width: 40px;
     height: 40px;
     display: flex;
@@ -175,12 +176,58 @@ th{
     border-radius: 6px;
     font-size: 12px;
 }
-
+#badge{
+    aspect-ratio: 1/1;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 25%);
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+}
 .addButton:active{
     background-color: #399027;
     border: 2px solid #317B22;
 }
 
 .minusButton{
-    
+    aspect-ratio: 1/1;
+    min-width: 20px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+}
+.qr-code-fullscreen{
+    position: fixed;
+    inset: 0;
+    z-index: 998;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qr-code-fullscreen>img{
+    z-index: 999;
+}
+.qr-code-fullscreen.active{
+    pointer-events: all;
+    opacity: 1;
+}
+.qr-code-fullscreen::before{
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: black;
+    opacity: 0.4;
 }

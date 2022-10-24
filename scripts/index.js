@@ -1,7 +1,20 @@
 import categories from '../menu.json' assert { type: 'json' };
 
+const vw = innerWidth;
+const vh = innerHeight;
+
+var count = 0;
+updateBadge()
+
+const urlParams = new URLSearchParams(window.location.search);
+const tableId = urlParams.get('table');
+document.querySelector(".qr-code-fullscreen").addEventListener('click', ()=>{
+    document.querySelector(".qr-code-fullscreen").classList.remove('active')
+})
 function createQRCode() {
-    const QRElement = document.getElementById("qrCode");
+    // const QRElement = document.getElementById("qrCode");
+    const QRElement = document.querySelector(".qr-code-fullscreen");
+    QRElement.classList.add('active')
     // Vider le container du QRCode avant de créer un nouveau QR Code
     // Sinon on a plusieurs QR Codes
     QRElement.innerHTML = "";
@@ -9,8 +22,8 @@ function createQRCode() {
     if(textinput.length > 2) {
         new QRCode(QRElement, {
             text: textinput,
-            width: 256, // à modifier plus tard
-            height: 256, // à modifier plus tard
+            width: 0.6*vw > 500 ? 500 : 0.6*vw, // à modifier plus tard
+            height: 0.6*vw > 500 ? 500 : 0.6*vw, // à modifier plus tard
             colorDark : "#000000",
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
@@ -128,6 +141,8 @@ for (let i = 0; i < categories.length; i++) {
         // Function to save customer's order and display it
 
         button.onclick = function() {
+            count++
+            updateBadge();
             if (order[categories[i].menu[j].id] == undefined){
                 order[categories[i].menu[j].id] = 1
             }
@@ -165,6 +180,8 @@ function displayOrder(i, j) {
         del.innerHTML = "-"
         del.className = "minusButton"
         del.onclick = function() {
+            count--
+            updateBadge();
             if (order[product] == 1) {
                 delete order[product]
             }
@@ -186,3 +203,12 @@ function displayOrder(i, j) {
 }
 // add validation button
 document.getElementById("order").innerHTML = "Votre panier est vide"
+
+function updateBadge(){
+    if(count == 0){
+        document.getElementById("badge").style.display = 'none';
+    }else{
+        document.getElementById("badge").style.display = 'flex';
+        document.getElementById("badge").innerHTML = count
+    }
+}
