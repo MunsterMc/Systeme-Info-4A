@@ -70,7 +70,7 @@ nav #toggle span{
     height: 100vh;
     right: 0;
     top: 0;
-    width: 60vw;
+    width: 75vw;
     padding: 20px;
     background-color: #45353A;
     transform: translateX(100%);
@@ -149,6 +149,8 @@ nav #toggle span{
     background-color: #C75000;
     filter: drop-shadow(4px 10px 4px rgba(0, 0, 0, 0.205));
 }
+
+.productimg
 
 table{
     height: 100%;
