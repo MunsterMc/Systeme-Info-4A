@@ -45,7 +45,7 @@
         },
         {
           "img": "images/entrees/202.jpg",
-          "name": "Soupe à l'onion",
+          "name": "Soupe à l'oignon",
           "id": 202,
           "prix": 5.5,
           "displayPrix": "5.50€",
@@ -68,7 +68,7 @@
       "menu": [
         {
           "img": "images/poissons/301.jpg",
-          "name": "Sardines dans leur boîte",
+          "name": "Sardines en boîte",
           "id": 301,
           "prix": 3,
           "displayPrix": "3.00€",

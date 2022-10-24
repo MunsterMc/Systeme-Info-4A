@@ -1,7 +1,18 @@
-import categories from '../menu.json' assert { type: 'json' };
+//import categories from '../menu.json' assert { type: 'json' };
+
+var categories = null;
+$.ajax({
+    'async': false,
+    'global': false,
+    'url': "../menu.json",
+    'dataType': "json",
+    'success': function (data) {
+        categories = data;
+    }
+});
 
 const vw = innerWidth;
-const vh = innerHeight;
+
 
 var count = 0;
 updateBadge()
@@ -117,12 +128,13 @@ for (let i = 0; i < categories.length; i++) {
         let col2 = document.createElement('th')
         col2.className = "col2"
 
-        let img = new Image()
-        img.src = categories[i].menu[j].img
-        img.alt = categories[i].menu[j].name
-        img.className = "productimg"
+        col1.style.backgroundImage = "url(" + categories[i].menu[j].img + ")"
+        // let img = new Image()
+        // img.src = categories[i].menu[j].img
+        // img.alt = categories[i].menu[j].name
+        // img.className = "productimg"
 
-        col1.appendChild(img) // add img
+        //col1.appendChild(img) // add img
 
         let title = document.createElement('p')
         title.className = "titleProduct"
