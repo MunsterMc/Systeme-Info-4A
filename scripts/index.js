@@ -188,30 +188,29 @@ fetch("../menu.json").then(res=>res.json()).then(categories=>{
 
         let price = 0
         for (const [product, quantity] of Object.entries(order)) {
-            if (product == "table") {
-                pass
-            }
-            let el = document.createElement('span')
-            let p = categories[product.toString().slice(0, 1)-1].menu.find(({ id }) => id === parseInt(product))
-            el.innerHTML = "<br />" + p.name + " X" + quantity
-            document.getElementById("order").appendChild(el)
-            price += p.prix * quantity
+            if (product != "table") {
+                let el = document.createElement('span')
+                let p = categories[product.toString().slice(0, 1)-1].menu.find(({ id }) => id === parseInt(product))
+                el.innerHTML = "<br />" + p.name + " X" + quantity
+                document.getElementById("order").appendChild(el)
+                price += p.prix * quantity
 
-            let del = document.createElement('button')
-            del.innerHTML = "-"
-            del.className = "minusButton"
-            del.onclick = function() {
-                count--
-                updateBadge();
-                if (order[product] == 1) {
-                    delete order[product]
+                let del = document.createElement('button')
+                del.innerHTML = "-"
+                del.className = "minusButton"
+                del.onclick = function() {
+                    count--
+                    updateBadge();
+                    if (order[product] == 1) {
+                        delete order[product]
+                    }
+                    else {
+                        order[product]--
+                    }
+                    displayOrder(i, j)
                 }
-                else {
-                    order[product]--
-                }
-                displayOrder(i, j)
+                document.getElementById("order").appendChild(del)
             }
-            document.getElementById("order").appendChild(del)
         }
 
         let total = document.createElement('span')
