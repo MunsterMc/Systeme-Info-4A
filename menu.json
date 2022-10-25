@@ -58,6 +58,14 @@
           "prix": 4.5,
           "displayPrix": "4.50€",
           "description": "description du produit"
+        },
+        {
+          "img": "images/entrees/204.jpg",
+          "name": "Saussion Brioché",
+          "id": 204,
+          "prix": 5,
+          "displayPrix": "5.00€",
+          "description": "Saussisson de notre bonne campagne dans sa brioche fermière"
         }
       ]
     },
@@ -98,7 +106,7 @@
       "name": "Viandes",
       "menu": [
         {
-          "img": "images/viandes/401.jpg",
+          "img": "images/viandes/401.png",
           "name": "Pollo al fuego",
           "id": 401,
           "prix": 30,
