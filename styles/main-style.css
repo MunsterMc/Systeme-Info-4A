@@ -225,17 +225,16 @@ th{
     pointer-events: all;
     opacity: 1;
 }
+
 .qr-code-fullscreen::before{
     content: '';
     position: fixed;
     inset: 0;
-    background: black;
-    opacity: 0.6;
+    background: white;
+    opacity: 1;
     z-index: -1;
 }
-.qr-code-fullscreen >  img{
-    border: 10px solid white;
-}
+
 
 .validateButton{
     border: none;
