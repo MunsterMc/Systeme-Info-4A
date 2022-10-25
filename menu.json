@@ -106,7 +106,7 @@
       "name": "Viandes",
       "menu": [
         {
-          "img": "images/viandes/401.jpg",
+          "img": "images/viandes/401.png",
           "name": "Pollo al fuego",
           "id": 401,
           "prix": 30,
