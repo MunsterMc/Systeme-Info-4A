@@ -2,7 +2,7 @@
     {
       "img": "images/boissons.jpg",
       "link": "#boissons",
-      "name": "Boissons",
+      "name": "Boissons. Emmanuel ",
       "menu": [
         {
           "img": "images/boissons/101.jpg",
@@ -10,15 +10,15 @@
           "id": 101,
           "prix": 12,
           "displayPrix": "12.00€",
-          "description": "un mélange divin de saveurs onctueuses"
+          "description": "Un mélange divin de saveurs onctueuses"
         },
         {
           "img": "images/boissons/102.jpg",
-          "name": "Coca-Cola",
+          "name": "Cacolac bien frais",
           "id": 102,
           "prix": 3,
           "displayPrix": "3.00€",
-          "description": "Canette 33cl, rafraichissant..."
+          "description": "Mieux que toute autre boisson, le cacolac est un concentré de fraîcheur"
         },
         {
           "img": "images/boissons/103.jpg",
@@ -26,7 +26,23 @@
           "id": 103,
           "prix": 1.5,
           "displayPrix": "1.50€",
-          "description": "c pas comme les ds de malandin"
+          "description": "Pas comme un contrôle de Malandin"
+        },
+        {
+          "img": "images/boissons/104.jpg",
+          "name": "Café",
+          "id": 104,
+          "prix": 2.5,
+          "displayPrix": "2.50€",
+          "description": "Un café toujours aussi bon, même s'il est servi par un stagiaire"
+        },
+        {
+          "img": "images/boissons/105.jpg",
+          "name": "Cacolac de la K'Fet",
+          "id": 105,
+          "prix": 2.5,
+          "displayPrix": "2.50€",
+          "description": "La boisson préférée des ENSIMIENS"
         }
       ]
     },
@@ -41,7 +57,7 @@
           "id": 201,
           "prix": 6,
           "displayPrix": "6.00€",
-          "description": "Délicieuses rillettes du Mans en provence de la ferme de Marcel à Tours"
+          "description": "Délicieuses rillettes du Mans provenant de la ferme de Marcel à Tours"
         },
         {
           "img": "images/entrees/202.jpg",
@@ -49,7 +65,7 @@
           "id": 202,
           "prix": 5.5,
           "displayPrix": "5.50€",
-          "description": "Soupe aux délicieux onions qui vous fera pleurer de joie"
+          "description": "Soupe aux délicieux oignons qui vous feront pleurer de joie"
         },
         {
           "img": "images/entrees/203.jpg",
@@ -57,15 +73,15 @@
           "id": 203,
           "prix": 4.5,
           "displayPrix": "4.50€",
-          "description": "Œufs du jours avec son exquise maillonaise"
+          "description": "Œufs du jours avec leur mayonnaise exquise..."
         },
         {
           "img": "images/entrees/204.jpg",
-          "name": "Saussion Brioché",
+          "name": "Saucisson Brioché",
           "id": 204,
           "prix": 5,
           "displayPrix": "5.00€",
-          "description": "Saussisson de notre bonne campagne dans sa brioche fermière"
+          "description": "Saucisson de notre douce campagne dans sa brioche fermière"
         }
       ]
     },
@@ -80,7 +96,7 @@
           "id": 301,
           "prix": 3,
           "displayPrix": "3.00€",
-          "description": "Plat réalisé en collaboration avec Patrick Sébastien" 
+          "description": "Plat réalisé en collaboration avec Patrick Sébastien"
         },
         {
           "img": "images/poissons/302.jpg",
@@ -88,7 +104,7 @@
           "id": 302,
           "prix": 14,
           "displayPrix": "14.00€",
-          "description": "Poisson directement des côtes d'Armor avec ses patates du terroir"
+          "description": "Poisson provenant des côtes d'Armor avec ses patates du terroir"
         },
         {
           "img": "images/poissons/303.jpg",
@@ -96,7 +112,7 @@
           "id": 303,
           "prix": 8.5,
           "displayPrix": "8.50€",
-          "description": "Plat qui conviendra à tous ceux qui cherchent des saveur de l'Angleterre "
+          "description": "Plat qui conviendra à tous ceux qui recherchent des saveurs de l'Angleterre "
         }
       ]
     },
@@ -111,7 +127,7 @@
           "id": 401,
           "prix": 30,
           "displayPrix": "30.00€",
-          "description": "Poulet cuit aux flamme de façon éclair avec son goût unique"
+          "description": "Poulet cuit aux flammes de l'éclair avec son goût unique"
         },
         {
           "img": "images/viandes/402.jpg",
@@ -119,7 +135,7 @@
           "id": 402,
           "prix": 15.5,
           "displayPrix": "15.50€",
-          "description": "Steak tartare fait avec des bovins du territoire"
+          "description": "Steak tartare fait avec des bovins du terroir"
         },
         {
           "img": "images/viandes/403.jpg",
@@ -127,7 +143,7 @@
           "id": 403,
           "prix": 10,
           "displayPrix": "10.00€",
-          "description": "bon poulets aux haricots verts"
+          "description": "Bon poulet aux haricots verts"
         }
       ]
     },
@@ -138,11 +154,11 @@
       "menu": [
         {
           "img": "images/fromages/501.jpg",
-          "name": "Camembert",
+          "name": "Camembert Président™",
           "id": 501,
           "prix": 5,
           "displayPrix": "5.00€",
-          "description": "Magnifique camembert président"
+          "description": "Magnifique camembert Président™"
         },
         {
           "img": "images/fromages/502.jpg",
@@ -150,7 +166,7 @@
           "id": 502,
           "prix": 2,
           "displayPrix": "2.00€",
-          "description": "pour ravir grands et petits"
+          "description": "Pour ravir les grands et les petits"
         },
         {
           "img": "images/fromages/503.jpg",
@@ -158,7 +174,7 @@
           "id": 503,
           "prix": 6,
           "displayPrix": "6.00€",
-          "description": "meilleur fromage français "
+          "description": "Le meilleur fromage français."
         }
       ]
     },
@@ -173,15 +189,15 @@
           "id": 601,
           "prix": 4,
           "displayPrix": "4.00€",
-          "description": "Crème brûlée iconique du restaurant "
+          "description": "Crème brûlée de manière contrôlée"
         },
         {
           "img": "images/desserts/602.jpg",
-          "name": "Brownie au chocolat",
+          "name": "Brownies au chocolat",
           "id": 602,
           "prix": 5,
           "displayPrix": "5.00€",
-          "description": "Brownies du chef qui va ravir vos papilles "
+          "description": "Brownies du chef qui vont vous ravir les papilles "
         },
         {
           "img": "images/desserts/603.jpg",
@@ -189,7 +205,7 @@
           "id": 603,
           "prix": 4.5,
           "displayPrix": "4.50€",
-          "description": "Délicieuse salade avec nos bon fruits "
+          "description": "Délicieuse salade accompagnée de bons fruits "
         }
       ]
     }
