@@ -233,6 +233,9 @@ th{
     opacity: 0.6;
     z-index: -1;
 }
+.qr-code-fullscreen >  img{
+    border: 10px solid white;
+}
 
 .validateButton{
     border: none;
