@@ -1,8 +1,25 @@
 //import categories from '../menu.json' assert { type: 'json' };
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+var table;
+function getTable(){
+    const tableNum = urlParams.get('table')
+    console.log(tableNum);
+    return tableNum;
+}
+
+setTimeout(()=>{
+    document.body.classList.add('active')
+}, 200)
 
 fetch("../menu.json").then(res=>res.json()).then(categories=>{
+    
+
+    
     console.log(categories);
 
+    table = getTable();
+    document.getElementById('tableNum').innerHTML = "Table : " + table
 
     const vw = innerWidth;
 
@@ -61,7 +78,7 @@ fetch("../menu.json").then(res=>res.json()).then(categories=>{
     // CATEGORIES
 
     var order = {}
-
+    order["table"] = table
     // display categories
 
     var top = document.createElement("div");
@@ -122,12 +139,6 @@ fetch("../menu.json").then(res=>res.json()).then(categories=>{
             col2.className = "col2"
 
             col1.style.backgroundImage = "url(" + categories[i].menu[j].img + ")"
-            // let img = new Image()
-            // img.src = categories[i].menu[j].img
-            // img.alt = categories[i].menu[j].name
-            // img.className = "productimg"
-
-            //col1.appendChild(img) // add img
 
             let title = document.createElement('p')
             title.className = "titleProduct"
@@ -177,6 +188,9 @@ fetch("../menu.json").then(res=>res.json()).then(categories=>{
 
         let price = 0
         for (const [product, quantity] of Object.entries(order)) {
+            if (product == "table") {
+                pass
+            }
             let el = document.createElement('span')
             let p = categories[product.toString().slice(0, 1)-1].menu.find(({ id }) => id === parseInt(product))
             el.innerHTML = "<br />" + p.name + " X" + quantity

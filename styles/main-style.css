@@ -113,7 +113,15 @@ nav #toggle span{
     background-image: no-repeat center center;
     background-position: center;
     filter: drop-shadow(4px 10px 4px rgba(0, 0, 0, 0.205));
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.6s ease-in-out;
 }
+body.active .content #cat{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .content #cat a{
     text-decoration: none;
     color: black;
@@ -238,4 +246,10 @@ th{
 
 .validateButton{
     border: none;
+}
+
+#tableNum {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
 }
