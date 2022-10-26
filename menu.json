@@ -73,7 +73,7 @@
           "id": 203,
           "prix": 4.5,
           "displayPrix": "4.50€",
-          "description": "Œufs du jours avec leur mayonnaise exquise..."
+          "description": "Œufs du jour avec leur mayonnaise exquise..."
         },
         {
           "img": "images/entrees/204.jpg",
@@ -112,7 +112,7 @@
           "id": 303,
           "prix": 8.5,
           "displayPrix": "8.50€",
-          "description": "Plat qui conviendra à tous ceux qui recherchent des saveurs de l'Angleterre."
+          "description": "Plat qui conviendra à tous ceux qui recherchent des saveurs d'Angleterre."
         }
       ]
     },
@@ -127,7 +127,7 @@
           "id": 401,
           "prix": 30,
           "displayPrix": "30.00€",
-          "description": "Poulet cuit aux flammes de l'éclair avec son goût unique."
+          "description": "Poulet cuit aux flammes de l'éclair qui a frappé notre restaurant."
         },
         {
           "img": "images/viandes/402.jpg",
@@ -135,7 +135,7 @@
           "id": 402,
           "prix": 15.5,
           "displayPrix": "15.50€",
-          "description": "Steak tartare fait avec des bovins du terroir."
+          "description": "Steak tartare fait avec des bovins du ter-ter."
         },
         {
           "img": "images/viandes/403.jpg",
@@ -143,7 +143,7 @@
           "id": 403,
           "prix": 10,
           "displayPrix": "10.00€",
-          "description": "Bon poulet aux haricots verts."
+          "description": "Plat typique du RU Bartholdi."
         }
       ]
     },
@@ -205,7 +205,7 @@
           "id": 603,
           "prix": 4.5,
           "displayPrix": "4.50€",
-          "description": "Délicieuse salade accompagnée de bons fruits."
+          "description": "Délicieuse salade accompagnée de bons fruits, servi dans le bol de ma mamie."
         }
       ]
     }
