@@ -254,7 +254,15 @@ th{
 
 
 .validateButton{
-    border: none;
+    background-color: #317B22;
+    color: white;
+    padding: 10px;
+    margin: 7px;
+    margin-left: 20%;
+    border: 2px solid #317B22;
+    font-family: aldrich, sans-serif;
+    border-radius: 6px;
+    font-size: 12px;
 }
 
 #tableNum {
@@ -262,3 +270,4 @@ th{
     font-size: larger;
     font-weight: bold;
 }
+

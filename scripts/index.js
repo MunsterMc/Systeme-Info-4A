@@ -218,7 +218,7 @@ fetch("../menu.json").then(res=>res.json()).then(categories=>{
             total.innerHTML = "Votre panier est vide"
             document.getElementById("validateButton").style.display = 'none'
         } else {
-            total.innerHTML = "<br />" + price + "€"
+            total.innerHTML = "<br /><br />Total : " + price + "€"
         }
         document.getElementById("order").appendChild(total)
     }
