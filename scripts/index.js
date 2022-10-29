@@ -1,4 +1,5 @@
-//import categories from '../menu.json' assert { type: 'json' };
+// Récupérer le numéro de la table dans l'URL
+
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 var table;
@@ -12,17 +13,12 @@ setTimeout(()=>{
     document.body.classList.add('active')
 }, 200)
 
-fetch("../menu.json").then(res=>res.json()).then(categories=>{
-    
-
-    
-    console.log(categories);
+fetch("../menu.json").then(res=>res.json()).then(categories=>{ // On récupère le menu à partir du fichier JSON
 
     table = getTable();
     document.getElementById('tableNum').innerHTML = "Table : " + table
 
     const vw = innerWidth;
-
 
     var count = 0;
     updateBadge()
@@ -33,7 +29,6 @@ fetch("../menu.json").then(res=>res.json()).then(categories=>{
         document.querySelector(".qr-code-fullscreen").classList.remove('active')
     })
     function createQRCode() {
-        // const QRElement = document.getElementById("qrCode");
         const QRElement = document.querySelector(".qr-code-fullscreen");
         QRElement.classList.add('active')
         // Vider le container du QRCode avant de créer un nouveau QR Code
@@ -43,8 +38,8 @@ fetch("../menu.json").then(res=>res.json()).then(categories=>{
         if(textinput.length > 2) {
             new QRCode(QRElement, {
                 text: textinput,
-                width: 0.6*vw > 500 ? 500 : 0.6*vw, // à modifier plus tard
-                height: 0.6*vw > 500 ? 500 : 0.6*vw, // à modifier plus tard
+                width: 0.6*vw > 500 ? 500 : 0.6*vw, 
+                height: 0.6*vw > 500 ? 500 : 0.6*vw, 
                 colorDark : "#000000",
                 colorLight : "#ffffff",
                 correctLevel : QRCode.CorrectLevel.H

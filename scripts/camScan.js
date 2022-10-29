@@ -2,7 +2,6 @@ screenWidth = window.innerWidth
 
 function onScanSuccess(decodedText, categories, cameraInstance) {
     // This is where we get our Scanned QR code
-    //console.log(`Code scanned = ${decodedText[0]}`);
     cameraInstance.stop();
 
     var orderScanned = JSON.parse(decodedText);
